@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_black_soft"
+    tools:context="com.dekastudio.activity.CuacaActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bungkusAtas"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_cerah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textSiangMalam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Siang"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imgSiangMalam"
+            app:layout_constraintTop_toBottomOf="@+id/imgSiangMalam" />
+
+        <ImageView
+            android:id="@+id/imgSiangMalam"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_siang"
+            android:layout_marginRight="8dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/penKiri"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/penBawah"
+            app:layout_constraintEnd_toStartOf="@+id/imgSiangMalam"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:id="@+id/textLokasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Condong Catur, Indonesia"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSuhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="30°"
+                android:textColor="#000000"
+                android:textSize="65sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textDetail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textLokasi"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/textDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="8dp"
+                android:singleLine="true"
+                android:text="Sedikit badai petir di beberapa bagian area ini"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textAngin"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" />
+
+            <RelativeLayout
+                android:id="@+id/garis"
+                android:layout_width="4dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/textDetail"
+                app:layout_constraintStart_toEndOf="@+id/textSuhu"
+                app:layout_constraintTop_toBottomOf="@+id/textLokasi"
+                android:layout_marginLeft="5dp">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textTanggal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:singleLine="true"
+                android:text="27 Februari 2018"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/textKetinggianTanah"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/garis"
+                app:layout_constraintTop_toBottomOf="@+id/textLokasi"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/textLamaHujan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:singleLine="true"
+                android:text="Hujan 2 Jam"
+                app:layout_constraintBottom_toTopOf="@+id/textDetail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/garis"
+                app:layout_constraintTop_toBottomOf="@+id/textKetinggianTanah" />
+
+            <TextView
+                android:id="@+id/textAngin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:singleLine="true"
+                android:text="Angin dari BD 9 km/j Angin Kencang: 13 km/j "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/textKetinggianTanah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="1200 MDPL"
+                app:layout_constraintBottom_toTopOf="@+id/textLamaHujan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/garis"
+                app:layout_constraintTop_toBottomOf="@+id/textTanggal"
+                android:layout_marginLeft="8dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/penBawah"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="#6635AFBB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Switch
+                android:id="@+id/switchSiangMalam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerLokasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/switchSiangMalam"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="8dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bungkusAtas" />
+
+</android.support.constraint.ConstraintLayout>

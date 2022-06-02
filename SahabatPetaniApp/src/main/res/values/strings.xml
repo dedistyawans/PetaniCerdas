@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Petani Cerdas</string>
+    <string name="title_activity_wiki">WikiActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="nav_tanaman">Tanaman</string>
+    <string name="nav_tanah">Tanah</string>
+    <string name="nav_penyakit">Hama</string>
+
+    <string name="menu_about">Tentang Pengembang</string>
+    <string name="menu_rate_app">Rate App</string>
+</resources>

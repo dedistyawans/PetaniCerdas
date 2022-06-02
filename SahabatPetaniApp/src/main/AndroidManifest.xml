@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dekastudio.sahabatpetanicerdas">
+
+    <!--untuk menjaga screen tetap on saat splash-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- permission untuk menyimpan dan membaca gambar dari external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- permission untuk mengunduh data dari internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- permission untuk memeriksa apakah ada koneksi jaringan -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- permission untuk mendapatkan lokasi koordinat berbasis network -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- permission untuk membaca lokasi koordinat berbasis gps -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.dekastudio.core.AppCore"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.dekastudio.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTanpaActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dekastudio.activity.MenuActivity"
+            android:label="Petani Cerdas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dekastudio.activity.WikiActivity"
+            android:label="Wiki Pertanian"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTanpaActionBar" />
+        <activity
+            android:name="com.dekastudio.activity.DetailTanaman"
+            android:label="Detail Tanaman"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dekastudio.activity.DetailTanah"
+            android:label="Detail Tanah"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dekastudio.activity.DetailPenyakit"
+            android:label="Detail Hama"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dekastudio.activity.CuacaActivity"
+            android:label="Lokasi Dan Cuaca"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dekastudio.activity.KonsultasiActivity"
+            android:label="Konsultasi Tanaman"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dekastudio.activity.HasilKonsultasiActivity"
+            android:label="Rekomendasi Tanaman"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

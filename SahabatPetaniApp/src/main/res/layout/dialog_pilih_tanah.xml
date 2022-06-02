@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA000000" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#268b95"
+        android:paddingBottom="4dp" >
+
+        <RelativeLayout
+            android:id="@+id/title_bar_view"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#35AFBB" >
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/title_textview"
+                android:text="Tanah Gambut"
+                android:textSize="20sp"
+                android:textColor="#f4f4f4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contents_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_bar_view"
+            android:paddingBottom="5dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" >
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="end"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:weightSum="1" >
+                <Button
+                    android:id="@+id/gridDialogBtnBatal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batal"
+                    tools:ignore="HardcodedText"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp" />
+                <Button
+                    android:id="@+id/gridDialogBtnPilih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_above="@id/button_layout"
+                android:gravity="center">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_left_arrow"
+                    android:id="@+id/gridDialogBtnPrev"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_cerah"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/gridDialogImageTanah"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_right_arrow"
+                    android:id="@+id/gridDIalogBtnNext"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

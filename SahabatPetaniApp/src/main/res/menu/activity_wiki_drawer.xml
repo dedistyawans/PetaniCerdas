@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tanaman"
+            android:icon="@drawable/ic_nav_tanaman"
+            android:title="@string/nav_tanaman" />
+        <item
+            android:id="@+id/nav_tanah"
+            android:icon="@drawable/ic_nav_tanah"
+            android:title="@string/nav_tanah" />
+        <item
+            android:id="@+id/nav_penyakit"
+            android:icon="@drawable/ic_nav_penyakit"
+            android:title="@string/nav_penyakit" />
+    </group>
+
+
+</menu>

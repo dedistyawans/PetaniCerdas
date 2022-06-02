@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dekastudio.customview.SquareRelative xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/penGrid"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_marginLeft="2.5dp"
+    android:layout_marginRight="2.5dp"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/imgGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg_cerah" />
+
+    <LinearLayout
+        android:id="@+id/checkGrid"
+        android:visibility="gone"
+        android:background="#6635AFBB"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_check"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#6635AFBB">
+
+        <TextView
+            android:singleLine="true"
+            android:focusable="true"
+            android:ellipsize="marquee"
+            android:textColor="#f4f4f4"
+            android:id="@+id/txtGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</com.dekastudio.customview.SquareRelative>
